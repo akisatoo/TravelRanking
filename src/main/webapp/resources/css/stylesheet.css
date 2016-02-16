@@ -1,0 +1,29 @@
+body {
+    background-color: #CCC;
+}
+
+#header-area {
+	width: auto;
+	height: 120px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 3em;
+	text-align: center;
+	background-color: #1e93c1;
+}
+
+#title {
+	margin: 0px;
+	padding: 0px;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+#description {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1rem;
+}
+
+#main-contents {
+}
