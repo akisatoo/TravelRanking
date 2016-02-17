@@ -8,9 +8,7 @@ import java.util.List;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
-import org.springframework.stereotype.Component;
 
-@Component
 public class RankingDaoImpl extends JdbcDaoSupport implements RankingDao {
 	public List<Ranking> getRankingList() throws DataAccessException {
 		RowMapper<Ranking> rowMapper = new RankingRowMapper();

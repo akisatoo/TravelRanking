@@ -29,19 +29,8 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
-		//テスト用
-		int i = 0;
-		Ranking[] rankingList = new Ranking[10];
-		for (i = 0; i < 10; i++) {
-			Ranking ranking = new Ranking();
-			ranking.setName("TEST" + i);
-			ranking.setRanking(i + 1);
-			ranking.setId(i);
-			rankingList[i] = ranking;
-		}
-		
 		logger.info("test: {}", rankingDao);
-		model.addAttribute("rankingList", rankingList);
+		model.addAttribute("rankingList", rankingDao.getRankingList());
 		
 		return "home";
 	}

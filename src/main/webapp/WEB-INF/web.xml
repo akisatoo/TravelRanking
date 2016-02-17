@@ -18,7 +18,6 @@
 	
 
 	<!-- Processes application requests -->
-	<!--
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -33,7 +32,6 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	-->
 	
 	<!-- マルチバイト対応 ここから追加して下さい。 -->
     <filter>
@@ -54,23 +52,10 @@
     </filter-mapping>
     <!-- add マルチバイト対応 ここまで -->
 	
-	
-	<servlet>
-		<servlet-name>example</servlet-name>
-	    <servlet-class>
-	      org.springframework.web.servlet.DispatcherServlet
-	    </servlet-class>
-	    <load-on-startup>1</load-on-startup>
-	</servlet>
-	
 	<servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.css</url-pattern>
     </servlet-mapping>
 	
-	<servlet-mapping>
-		<servlet-name>example</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
 
 </web-app>
